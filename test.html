@@ -1,14 +1,53 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Intro</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 10%;
+      background-color: #f8f9fa;
+    }
+
+    .logo {
+      width: 272px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      width: 50%;
+      padding: 12px;
+      font-size: 18px;
+      border: 1px solid #dcdcdc;
+      border-radius: 4px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 5px;
+      background-color: #f8f9fa;
+      border: 1px solid #dcdcdc;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e8e8e8;
+    }
+    body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0a0a0a;
-      color: white;
+      background-color: #ef1c1c;
+      color: rgb(16, 15, 15);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -36,7 +75,7 @@
 
     .intro p {
       font-size: 16px;
-      color: #999;
+      color: #28ea0b;
       margin-bottom: 30px;
       line-height: 1.6;
     }
@@ -58,7 +97,7 @@
       height: 300px;
       object-fit: cover;
       border-radius: 50%;
-      border: 5px solid #111;
+      border: 5px solid #02010c;
     }
 
     .partners {
@@ -67,7 +106,7 @@
     }
 
     .partners p {
-      color: #aaa;
+      color: #e51111;
       margin-bottom: 20px;
     }
 
@@ -79,27 +118,108 @@
     }
 
     .partner-logos div {
-      background-color: #111;
+      background-color: #ea0c91;
       padding: 10px 20px;
       border-radius: 8px;
-      color: #888;
+      color: #f9fcfc;
       font-weight: bold;
       text-transform: uppercase;
       font-size: 14px;
     }
-  </style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fc;
+      margin: 0;
+      padding: 0;
+    }
+
+    .services-section {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    .services-section h2 {
+      color: #6eea08;
+      margin-bottom: 10px;
+    }
+
+    .services-section p {
+      color: #6c757d;
+      margin-bottom: 40px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      background-color: #ffffff;
+      border: 1px solid #dee2e6;
+      /* Light grey border */
+      border-radius: 8px;
+      padding: 30px 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      /* Stronger shadow */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      /* Deeper shadow on hover */
+    }
+
+    .service-icon {
+      font-size: 40px;
+      color: #4a90e2;
+      margin-bottom: 15px;
+    }
+
+    .service-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .service-description {
+      font-size: 14px;
+      color: #6c757d;
+    }
+
+        </style>
 </head>
+
 <body>
+  <!-- Google Logo Image -->
+  <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" class="logo">
+
+  <!-- Search Form -->
+  <form action="https://www.google.com/search" method="GET" target="_blank">
+    <input type="text" name="q" placeholder="Search Google...">
+    <div class="buttons">
+      <input type="submit" value="Google Search">
+      <input type="submit" name="btnI" value="I'm Feeling Lucky">
+    </div>
+  </form>
+
   <div class="container">
     <div class="intro">
       <h1>Your Name Here</h1>
       <p>
-        Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua.
       </p>
       <button>Let’s get started ></button>
     </div>
     <div class="profile-img">
-      <img src="https://cdn.wallpapersafari.com/10/13/GNMBrd.jpg" alt="Profile Picture"/>
+      <img src="https://cdn.wallpapersafari.com/10/13/GNMBrd.jpg" alt="Profile Picture" />
     </div>
   </div>
 
@@ -113,15 +233,49 @@
       <div>Stripe</div>
     </div>
   </div>
+  <section class="services-section">
+    <div class="section-header">
+      <p style="color: #4a90e2; font-weight: bold;">OUR SERVICES</p>
+      <h2>What We Do</h2>
+    </div>
 
- 
-  <p>this is my computer</p>
-</body>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <div class="service-title">Market Analysis</div>
+        <div class="service-description">We support your business with fact-based market research.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📈</div>
+        <div class="service-title">Funds Management</div>
+        <div class="service-description">Allowing you to successfully deal with your company's funds.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📺</div>
+        <div class="service-title">PR & Marketing</div>
+        <div class="service-description">Helping clients expand awareness and manage their reputation.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📝</div>
+        <div class="service-title">Business Planning</div>
+        <div class="service-description">Creating an efficient business plan designed to fit your company.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <div class="service-title">Audit</div>
+        <div class="service-description">Deep and detailed investigation of your company's activity.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💼</div>
+        <div class="service-title">Consulting</div>
+        <div class="service-description">Focusing on our clients' most critical issues and opportunities.</div>
+      </div>
+    </div>
+  </section>
+  </body>
 </html>
-
-
-
-
-
-
-
